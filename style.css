@@ -28,9 +28,8 @@
     .logo {
       font-size: 2rem;
       font-weight: 700;
-      background: linear-gradient(135deg, #b8860b, #8b0000);
+      background: linear-gradient(135deg, #b8860b, #f7be03);
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
       background-clip: text;
       display: inline-block;
       position: relative;
