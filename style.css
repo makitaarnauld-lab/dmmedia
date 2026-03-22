@@ -986,7 +986,8 @@
 
     @media (max-width: 768px) {
       .nav-links { display: none; }
-      .burger { display: flex; }
+      .nav-links.active { display: flex; }
+      .burger{display: block;}
       .hero-content h1 { font-size: 2.3rem; }
       .contact-grid { grid-template-columns: 1fr; }
       .form-container { padding: 1.5rem; }
