@@ -17,7 +17,7 @@
     .flag-strip {
       height: 8px;
       width: 100%;
-      background: linear-gradient(45deg, #009543 0%, #009543 33%, #F7D618 33%, #F7D618 66%, #DC241F 66%, #DC241F 100%);
+      background: linear-gradient(45deg, #1202f1 0%, #0024ee 33%, #f7e818 33%, #f7bc18 66%, #fc0404 66%, #fc0202 100%);
       position: fixed;
       top: 0;
       z-index: 1000;

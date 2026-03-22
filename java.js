@@ -9,56 +9,6 @@
       alert('Cette plateforme n\'est pas disponible pour le moment.');
     });
 
-    // --- Galerie dynamique (inchangée) ---
-    const galleryData = [
-      { type: 'image', url: 'image/DSC_7800.JPG', title: 'Mariés' },
-      { type: 'image', url: 'image/DSC_7801.JPG', title: 'Mariés' },
-      { type: 'image', url: 'image/DSC_7806.JPG', title: 'Mariés' },
-      { type: 'image', url: 'image/DSC_7832.JPG', title: 'Mariés' },
-      { type: 'image', url: 'image/DSC_7933.JPG', title: 'Mariés' },
-      { type: 'image', url: 'image/DSC_7977.JPG', title: 'Mariés' },
-      { type: 'image', url: 'image/DSC_7997.JPG', title: 'Mariés' },
-      { type: 'image', url: 'image/1768056452412.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/IMG_0004.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/DSC_5841.JPG', title: 'Mariés' },
-      { type: 'image', url: 'image/DSC_5849.JPG', title: 'Mariés' },
-      { type: 'image', url: 'image/DSC_5850.JPG', title: 'Mariés' },
-      { type: 'image', url: 'image/DSC_5863.JPG', title: 'Mariés' },
-      { type: 'image', url: 'image/1768990115242_1.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/1768990104064_1.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/1768990099198.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/1768990095919.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/1768990089172.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/1768056458243.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/1768990138862_1.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/1768990136249_1.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/1768990131101_1.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/1768990129017_1.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/1768990124295_1.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/1768990119010_1.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/1769012850799.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/1768990199457_1.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/1768990188773_1.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/1768990173551_1.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/1768990144169_1.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/1768990141106_1.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/DSC_0126.JPG', title: 'Mariés' },
-      { type: 'image', url: 'image/DSC_0142.JPG', title: 'Mariés' },
-      { type: 'image', url: 'image/DSC_0209.JPG', title: 'Mariés' },
-      { type: 'image', url: 'image/DSC_0214.JPG', title: 'Mariés' },
-      { type: 'image', url: 'image/DSC_0018.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/DSC_0231.JPG', title: 'Mariés' },
-      { type: 'image', url: 'image/aab461b873d8a64a07e2b615919706d2.jpg', title: 'Mariés' },
-      { type: 'image', url: 'image/1769013999921.jpg', title: 'Mariés' },
-      { type: 'video', videoId: 'v1MVV-Fzurs', title: 'Immersion' },
-      { type: 'video', videoId: 'HUs90ELz0JM', title: 'Célébration' },
-      { type: 'video', videoId: 'Q7kyDVs0R9w', title: 'Réalisation' },
-      { type: 'video', videoId: 'YkyDgOnH23U', title: 'Mariage officiel' },
-      { type: 'video', videoId: 'adHo8scLcbo', title: 'DM MÉDIA' },
-      { type: 'image', url: 'image/DSC_0002.jpg', title: 'Traditionnel' },
-      { type: 'image', url: 'image/30056bb935edfc8a1b1d7aeaded3ff9b.jpg', title: 'Mairie' }
-    ];
-
     const galleryGrid = document.getElementById('galleryGrid');
     const ratings = JSON.parse(localStorage.getItem('dmmedia_ratings')) || {};
 
