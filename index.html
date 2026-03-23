@@ -13,24 +13,27 @@
 
   <nav class="navbar">
     <div class="logo">DM MÉDIA</div>
-    <div class="nav-links" id="navlinks">
-      <a href="#accueil">Accueil</a>
-      <a href="#services">Services</a>
-      <a href="galerie.html">Galerie</a>
-      <a href="messagerie.html">Messagerie</a>
-      <a href="#reservation">Réservation</a>
-      <a href="#contact">Contact</a>
-  
+    <div class="nav-links">
+      <a href="#Accueil">Accueil</a>
+      <a href="#Services">Services</a>
+      <a href="Galerie.html">Galerie</a>
+      <a href="Messagerie.html">Messagerie</a>
+      <a href="#Réservation">Réservation</a>
+      <a href="#Contacts">Contact</a>
     </div>
     <div class="burger">
       <div></div><div></div><div></div>
     </div>
   </nav>
+
   <section id="accueil" class="hero">
     <div class="hero-content">
-      <h1>DM MÉDIA entreprise audiovisuelle<span>–</span> L'excellence <br> de vos souvenirs </h1>
-      <b><p>Photographie & vidéo événementiel · mariages, shootings photo pro,publicité, interview, Clip, montage Pro, productions sur-mesure</p></b>
-      <a href="#services" class="hero-btn">Découvrir</a>
+      <h1>DM MÉDIA entreprise audiovisuelle<span>–</span> L'excellence <br> de vos souvenirs</h1>
+      <p><b>Photographie & vidéo événementiel · mariages,publicité, interview, concert, conférence, clip vidéo, shootings, productions sur-mesure</p></b>
+      <div>
+        <a href="#services" class="hero-btn">Découvrir</a>
+        <a href="./Galerie.html" class="hero-btn">Voir la galerie</a>
+      </div>
     </div>
     <div class="marquee">
       <div class="marquee-content">
@@ -38,21 +41,29 @@
       </div>
     </div>
   </section>
+
   <div style="padding: 2rem 5% 0;">
     <div class="intro-text">
       <i class="fas fa-camera-retro" style="color: #b8860b; font-size: 2.5rem; margin-bottom: 1rem;"></i>
-      <p>Spécialiste en audiovisuel à Pointe-Noire, nous immortalisons vos moments précieux avec une touche cinématographique. Mariages coutumiers, officiels, religieux.Publicité, Interview, Clip, Montage Pro – chaque détail compte pour créer des souvenirs inoubliables.</p>
+      <p>Spécialiste en audiovisuel à Pointe-Noire, nous immortalisons vos moments précieux avec une touche cinématographique. Mariages coutumiers, officiels, religieux,Publicité, interview, concert, conférence, clip vidéo etc. – chaque détail compte pour créer des souvenirs  inoubliable.</p>
     </div>
   </div>
 
   <div class="bride-carousel">
     <div class="carousel-track">
-      <img src="image/cc97291fc56499a9620a763aabc5deb4.jpg" alt="Mariage">
-      <img src="image/portrait-ai-edit (8).png" alt="Mariage">
-      <img src="image/b966845060722a7fc79ff9f30a4aa7be.jpg" alt="Mariage">
-      <img src="image/1161f6f785fa577ebb8bade2df91a9a2.jpg" alt="Mariage">
-      <img src="image/6f39d634f98b71157519b48a832245bf.jpg" alt="Mariage">
+      <img src="image/1768990131101_1.jpg" alt="Mariage">
+      <img src="image/1769012874601_1.jpg" alt="Mariage">
+      <img src="image/DSC_0001.JPG" alt="Mariage">
+      <img src="image/DSC_0016.JPG" alt="Mariage">
+      <img src="image/1768990129017_1.jpg" alt="Mariage">
+      <img src="image/1768990173551_1.jpg" alt="Mariage">
+      <img src="image/DSC_0110.JPG" alt="Mariage">
+      <img src="image/DSC_0209.JPG" alt="Mariage">
+      <img src="image/DSC_0111.JPG" alt="Mariage">
+      <img src="image/IMG_0004.jpg" alt="Mariage">
       <img src="image/IMG_20251127_222806.jpg" alt="Mariage">
+      <img src="image/DSC_0427.JPG" alt="Mariage">
+      <img src="image/6f39d634f98b71157519b48a832245bf copy.jpg" alt="Mariage">
       <img src="image/Letter-DM-Beautiful-Woman-Logo-Graphics-49322423-1-580x387.jpg" alt="Mariage">
     </div>
   </div>
@@ -88,8 +99,9 @@
   </section>
   <section id="services">
     <h2 class="section-title">Nos <span>offres</span> sur mesure</h2>
-    <h2 class="section-title">Pointe<span>-</span> Noire</h2>
+    <h2 class="section-title">POINTE-NOIRE</h2>
     <div class="services-grid">
+      <!-- Pointe-Noire -->
       <div class="service-card">
         <div class="service-content">
           <h3>Mariage coutumier</h3>
@@ -100,15 +112,17 @@
               <li><i class="fas fa-check-circle"></i> Photos illimitées</li>
               <li><i class="fas fa-check-circle"></i> 50 photos imprimées 13x18</li>
               <li><i class="fas fa-check-circle"></i> 50 cartes d'invitation</li>
+              <li><i class="fas fa-check-circle"></i> Shooting photo professionnel</li>
               <li><i class="fas fa-check-circle"></i> Clé USB 8Go</li>
               <li><i class="fas fa-check-circle"></i> Reportage vidéo & photo</li>
               <li><i class="fas fa-check-circle"></i> Photos illimitées</li>
               <li><i class="fas fa-check-circle"></i> 50 photos imprimées 13x18</li>
               <li><i class="fas fa-check-circle"></i> 50 cartes d'invitation</li>
+              <li><i class="fas fa-check-circle"></i> Shooting photo professionnel</li>
               <li><i class="fas fa-check-circle"></i> Clé USB 8Go</li>
             </ul>
           </div>
-          <button class="btn-reserver" onclick="document.getElementById('reservation').scrollIntoView()">Réserver</button>
+          <button class="btn-reserver" onclick="document.getElementById('reservation').scrollIntoView({behavior:'smooth'})">Réserver</button>
         </div>
       </div>
       <div class="service-card">
@@ -122,23 +136,23 @@
               <li><i class="fas fa-check-circle"></i> 100 photos imprimées 13x18</li>
               <li><i class="fas fa-check-circle"></i> 100 cartes d'invitation</li>
               <li><i class="fas fa-check-circle"></i> Grande photo portrait</li>
-              <li><i class="fas fa-check-circle"></i> Shooting professionnel</li>
-              <li><i class="fas fa-check-circle"></i> Clé USB 8Go</li>
+              <li><i class="fas fa-check-circle"></i> Shooting photo professionnel</li>
+              <li><i class="fas fa-check-circle"></i> Clé USB 16Go</li>
               <li><i class="fas fa-check-circle"></i> Reportage vidéo & photo</li>
               <li><i class="fas fa-check-circle"></i> Photos illimitées</li>
               <li><i class="fas fa-check-circle"></i> 100 photos imprimées 13x18</li>
               <li><i class="fas fa-check-circle"></i> 100 cartes d'invitation</li>
               <li><i class="fas fa-check-circle"></i> Grande photo portrait</li>
-              <li><i class="fas fa-check-circle"></i> Shooting professionnel</li>
+              <li><i class="fas fa-check-circle"></i> Shooting photo professionnel</li>
               <li><i class="fas fa-check-circle"></i> Clé USB 16Go</li>
             </ul>
           </div>
-          <button class="btn-reserver" onclick="document.getElementById('reservation').scrollIntoView()">Réserver</button>
+          <button class="btn-reserver" onclick="document.getElementById('reservation').scrollIntoView({behavior:'smooth'})">Réserver</button>
         </div>
       </div>
       <div class="service-card">
         <div class="service-content">
-          <h3>Pack complet</h3>
+          <h3>Pack complet (Coutumier + Officiel + Religieux)</h3>
           <div class="price">250 000 FCFA</div>
           <div class="service-list">
             <ul>
@@ -147,18 +161,137 @@
               <li><i class="fas fa-check-circle"></i> 100 photos imprimées 13x18</li>
               <li><i class="fas fa-check-circle"></i> 100 cartes d'invitation</li>
               <li><i class="fas fa-check-circle"></i> Grande photo portrait</li>
-              <li><i class="fas fa-check-circle"></i> Shooting professionnel</li>
+              <li><i class="fas fa-check-circle"></i> Shooting photo professionnel</li>
               <li><i class="fas fa-check-circle"></i> Clé USB 8Go</li>
               <li><i class="fas fa-check-circle"></i> Coutumier + officiel + religieux</li>
               <li><i class="fas fa-check-circle"></i> Photos illimitées</li>
               <li><i class="fas fa-check-circle"></i> 100 photos imprimées 13x18</li>
               <li><i class="fas fa-check-circle"></i> 100 cartes d'invitation</li>
               <li><i class="fas fa-check-circle"></i> Grande photo portrait</li>
-              <li><i class="fas fa-check-circle"></i> Shooting professionnel</li>
+              <li><i class="fas fa-check-circle"></i> Shooting photo professionnel</li>
               <li><i class="fas fa-check-circle"></i> Clé USB 16Go</li>
             </ul>
           </div>
-          <button class="btn-reserver" onclick="document.getElementById('reservation').scrollIntoView()">Réserver</button>
+          <button class="btn-reserver" onclick="document.getElementById('reservation').scrollIntoView({behavior:'smooth'})">Réserver</button>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-content">
+          <h3>Montage vidéo pro</h3>
+          <div class="price">20 000 FCFA +</div>
+          <div class="service-list">
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Montage de clips, mariages, événements</li>
+              <li><i class="fas fa-check-circle"></i> Effets, transitions, étalonnage</li>
+              <li><i class="fas fa-check-circle"></i> Livraison en 4K / HD</li>
+              <li><i class="fas fa-check-circle"></i> Devis selon la durée</li>
+              <li><i class="fas fa-check-circle"></i> Montage de clips, mariages, événements</li>
+              <li><i class="fas fa-check-circle"></i> Effets, transitions, étalonnage</li>
+              <li><i class="fas fa-check-circle"></i> Livraison en 4K / HD</li>
+              <li><i class="fas fa-check-circle"></i> Devis selon la durée</li>
+            </ul>
+          </div>
+          <button class="btn-reserver" onclick="document.getElementById('reservation').scrollIntoView({behavior:'smooth'})">Réserver</button>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-content">
+          <h3>Conception graphique</h3>
+          <div class="price">Sur devis</div>
+          <div class="service-list">
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Flyers, affiches, bâches</li>
+              <li><i class="fas fa-check-circle"></i> Cartes de visite, invitations</li>
+              <li><i class="fas fa-check-circle"></i> Identité visuelle</li>
+              <li><i class="fas fa-check-circle"></i> Impression possible</li>
+              <li><i class="fas fa-check-circle"></i> Flyers, affiches, bâches</li>
+              <li><i class="fas fa-check-circle"></i> Cartes de visite, invitations</li>
+              <li><i class="fas fa-check-circle"></i> Identité visuelle</li>
+              <li><i class="fas fa-check-circle"></i> Impression possible</li>
+            </ul>
+          </div>
+          <button class="btn-reserver" onclick="document.getElementById('reservation').scrollIntoView({behavior:'smooth'})">Réserver</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">Nos <span>offres</span> sur mesure</h2>
+    <h2 class="section-title">BRAZZAVILLE</h2>
+    <div class="services-grid">
+      <!-- BRAZZAVILLE -->
+      <div class="service-card">
+        <div class="service-content">
+          <h3>Mariage coutumier</h3>
+          <div class="price">150 000 FCFA</div>
+          <div class="service-list">
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Reportage vidéo & photo</li>
+              <li><i class="fas fa-check-circle"></i> Photos illimitées</li>
+              <li><i class="fas fa-check-circle"></i> 50 photos imprimées 13x18</li>
+              <li><i class="fas fa-check-circle"></i> 50 cartes d'invitation</li>
+              <li><i class="fas fa-check-circle"></i> Shooting photo professionnel</li>
+              <li><i class="fas fa-check-circle"></i> Clé USB 8Go</li>
+              <li><i class="fas fa-check-circle"></i> Reportage vidéo & photo</li>
+              <li><i class="fas fa-check-circle"></i> Photos illimitées</li>
+              <li><i class="fas fa-check-circle"></i> 50 photos imprimées 13x18</li>
+              <li><i class="fas fa-check-circle"></i> 50 cartes d'invitation</li>
+              <li><i class="fas fa-check-circle"></i> Shooting photo professionnel</li>
+              <li><i class="fas fa-check-circle"></i> Clé USB 8Go</li>
+            </ul>
+          </div>
+          <button class="btn-reserver" onclick="document.getElementById('reservation').scrollIntoView({behavior:'smooth'})">Réserver</button>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-content">
+          <h3>Mariage officiel</h3>
+          <div class="price">200000 FCFA</div>
+          <div class="service-list">
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Reportage vidéo & photo</li>
+              <li><i class="fas fa-check-circle"></i> Photos illimitées</li>
+              <li><i class="fas fa-check-circle"></i> 100 photos imprimées 13x18</li>
+              <li><i class="fas fa-check-circle"></i> 100 cartes d'invitation</li>
+              <li><i class="fas fa-check-circle"></i> Grande photo portrait</li>
+              <li><i class="fas fa-check-circle"></i> Shooting photo professionnel</li>
+              <li><i class="fas fa-check-circle"></i> Clé USB 16Go</li>
+              <li><i class="fas fa-check-circle"></i> Reportage vidéo & photo</li>
+              <li><i class="fas fa-check-circle"></i> Photos illimitées</li>
+              <li><i class="fas fa-check-circle"></i> 100 photos imprimées 13x18</li>
+              <li><i class="fas fa-check-circle"></i> 100 cartes d'invitation</li>
+              <li><i class="fas fa-check-circle"></i> Grande photo portrait</li>
+              <li><i class="fas fa-check-circle"></i> Shooting photo professionnel</li>
+              <li><i class="fas fa-check-circle"></i> Clé USB 16Go</li>
+            </ul>
+          </div>
+          <button class="btn-reserver" onclick="document.getElementById('reservation').scrollIntoView({behavior:'smooth'})">Réserver</button>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-content">
+          <h3>Pack complet (Coutumier + Officiel + Religieux)</h3>
+          <div class="price">350 000 FCFA</div>
+          <div class="service-list">
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Coutumier + officiel + religieux</li>
+              <li><i class="fas fa-check-circle"></i> Photos illimitées</li>
+              <li><i class="fas fa-check-circle"></i> 100 photos imprimées 13x18</li>
+              <li><i class="fas fa-check-circle"></i> 100 cartes d'invitation</li>
+              <li><i class="fas fa-check-circle"></i> Grande photo portrait</li>
+              <li><i class="fas fa-check-circle"></i> Shooting photo professionnel</li>
+              <li><i class="fas fa-check-circle"></i> Clé USB 8Go</li>
+              <li><i class="fas fa-check-circle"></i> Coutumier + officiel + religieux</li>
+              <li><i class="fas fa-check-circle"></i> Photos illimitées</li>
+              <li><i class="fas fa-check-circle"></i> 100 photos imprimées 13x18</li>
+              <li><i class="fas fa-check-circle"></i> 100 cartes d'invitation</li>
+              <li><i class="fas fa-check-circle"></i> Grande photo portrait</li>
+              <li><i class="fas fa-check-circle"></i> Shooting photo professionnel</li>
+              <li><i class="fas fa-check-circle"></i> Clé USB 16Go</li>
+            </ul>
+          </div>
+          <button class="btn-reserver" onclick="document.getElementById('reservation').scrollIntoView({behavior:'smooth'})">Réserver</button>
         </div>
       </div>
       <div class="service-card">
@@ -177,7 +310,7 @@
               <li><i class="fas fa-check-circle"></i> Devis selon la durée</li>
             </ul>
           </div>
-          <button class="btn-reserver" onclick="document.getElementById('reservation').scrollIntoView()">Réserver</button>
+          <button class="btn-reserver" onclick="document.getElementById('reservation').scrollIntoView({behavior:'smooth'})">Réserver</button>
         </div>
       </div>
       <div class="service-card">
@@ -196,124 +329,7 @@
               <li><i class="fas fa-check-circle"></i> Impression possible</li>
             </ul>
           </div>
-          <button class="btn-reserver" onclick="document.getElementById('reservation').scrollIntoView()">Réserver</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="services">
-    <h2 class="section-title">Nos <span>offres</span> sur mesure</h2>
-    <h2 class="section-title">Brazzaville</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-content">
-          <h3>Mariage coutumier</h3>
-          <div class="price">150.000 FCFA</div>
-          <div class="service-list">
-            <ul>
-              <li><i class="fas fa-check-circle"></i> Reportage vidéo & photo</li>
-              <li><i class="fas fa-check-circle"></i> Photos illimitées</li>
-              <li><i class="fas fa-check-circle"></i> 50 photos imprimées format 13x18</li>
-              <li><i class="fas fa-check-circle"></i> 50 cartes d'invitation</li>
-              <li><i class="fas fa-check-circle"></i> Clé USB 8Go</li>
-              <li><i class="fas fa-check-circle"></i> Photos illimitées</li>
-              <li><i class="fas fa-check-circle"></i> 50 photos imprimées 13x18</li>
-              <li><i class="fas fa-check-circle"></i> 50 cartes d'invitation</li>
-              <li><i class="fas fa-check-circle"></i> Clé USB 8Go</li>
-            </ul>
-            </ul>
-          </div>
-          <button class="btn-reserver" onclick="document.getElementById('reservation').scrollIntoView()">Réserver</button>
-        </div>
-      </div>
-      <div class="service-card">
-        <div class="service-content">
-          <h3>Mariage officiel</h3>
-          <div class="price">195.000 FCFA</div>
-          <div class="service-list">
-            <ul>
-              <li><i class="fas fa-check-circle"></i> Reportage vidéo & photo</li>
-              <li><i class="fas fa-check-circle"></i> Photos illimitées</li>
-              <li><i class="fas fa-check-circle"></i> 100 photos imprimées format 13x18</li>
-              <li><i class="fas fa-check-circle"></i> 100 cartes d'invitation</li>
-              <li><i class="fas fa-check-circle"></i> Grande photo portrait</li>
-              <li><i class="fas fa-check-circle"></i> Shooting professionnel</li>
-              <li><i class="fas fa-check-circle"></i> Clé USB 16Go</li>
-              <li><i class="fas fa-check-circle"></i> Reportage vidéo & photo</li>
-              <li><i class="fas fa-check-circle"></i> Photos illimitées</li>
-              <li><i class="fas fa-check-circle"></i> 100 photos imprimées 13x18</li>
-              <li><i class="fas fa-check-circle"></i> 100 cartes d'invitation</li>
-              <li><i class="fas fa-check-circle"></i> Grande photo portrait</li>
-              <li><i class="fas fa-check-circle"></i> Shooting professionnel</li>
-              <li><i class="fas fa-check-circle"></i> Clé USB 16Go</li>
-            </ul>
-      
-            </ul>
-          </div>
-          <button class="btn-reserver" onclick="document.getElementById('reservation').scrollIntoView()">Réserver</button>
-        </div>
-      </div>
-      <div class="service-card">
-        <div class="service-content">
-          <h3>Pack complet</h3>
-          <div class="price">350 000 FCFA (Coutumier + officiel + religieux)</div>
-          <div class="service-list">
-            <ul>
-              <li><i class="fas fa-check-circle"></i> Reportage vidéo & photo</li>
-              <li><i class="fas fa-check-circle"></i> Photos illimitées</li>
-              <li><i class="fas fa-check-circle"></i> 100 photos imprimées format 13x18</li>
-              <li><i class="fas fa-check-circle"></i> 100 cartes d'invitation</li>
-              <li><i class="fas fa-check-circle"></i> Grande photo portrait</li>
-              <li><i class="fas fa-check-circle"></i> Shooting photo professionnel</li>
-              <li><i class="fas fa-check-circle"></i> Clé USB 16Go</li>
-              <li><i class="fas fa-check-circle"></i> Coutumier + officiel + religieux</li>
-              <li><i class="fas fa-check-circle"></i> Photos illimitées</li>
-              <li><i class="fas fa-check-circle"></i> 100 photos imprimées 13x18</li>
-              <li><i class="fas fa-check-circle"></i> 100 cartes d'invitation</li>
-              <li><i class="fas fa-check-circle"></i> Grande photo portrait</li>
-              <li><i class="fas fa-check-circle"></i> Shooting professionnel</li>
-              <li><i class="fas fa-check-circle"></i> Clé USB 16Go</li>
-            </ul>
-          </div>
-          <button class="btn-reserver" onclick="document.getElementById('reservation').scrollIntoView()">Réserver</button>
-        </div>
-      </div>
-      <div class="service-card">
-        <div class="service-content">
-          <h3>Montage vidéo pro</h3>
-          <div class="price">30 000 FCFA +</div>
-          <div class="service-list">
-            <ul>
-              <li><i class="fas fa-check-circle"></i> Montage de clips, mariages, événements</li>
-              <li><i class="fas fa-check-circle"></i> Effets, transitions, étalonnage</li>
-              <li><i class="fas fa-check-circle"></i> Livraison en 4K / HD</li>
-              <li><i class="fas fa-check-circle"></i> Devis selon la durée</li>
-              <li><i class="fas fa-check-circle"></i> Montage de clips, mariages, événements</li>
-              <li><i class="fas fa-check-circle"></i> Effets, transitions, étalonnage</li>
-              <li><i class="fas fa-check-circle"></i> Livraison en 4K / HD</li>
-              <li><i class="fas fa-check-circle"></i> Devis selon la durée</li>
-          </div>
-          <button class="btn-reserver" onclick="document.getElementById('reservation').scrollIntoView()">Réserver</button>
-        </div>
-      </div>
-      <div class="service-card">
-        <div class="service-content">
-          <h3>Conception graphique</h3>
-          <div class="price">Sur devis</div>
-          <div class="service-list">
-            <ul>
-              <li><i class="fas fa-check-circle"></i> Flyers, affiches, bâches</li>
-              <li><i class="fas fa-check-circle"></i> Cartes de visite, invitations</li>
-              <li><i class="fas fa-check-circle"></i> Identité visuelle</li>
-              <li><i class="fas fa-check-circle"></i> Impression possible</li>
-              <li><i class="fas fa-check-circle"></i> Flyers, affiches, bâches</li>
-              <li><i class="fas fa-check-circle"></i> Cartes de visite, invitations</li>
-              <li><i class="fas fa-check-circle"></i> Identité visuelle</li>
-              <li><i class="fas fa-check-circle"></i> Impression possible</li>
-            </ul>
-          </div>
-          <button class="btn-reserver" onclick="document.getElementById('reservation').scrollIntoView()">Réserver</button>
+          <button class="btn-reserver" onclick="document.getElementById('reservation').scrollIntoView({behavior:'smooth'})">Réserver</button>
         </div>
       </div>
     </div>
@@ -321,7 +337,12 @@
 
   <section id="galerie">
     <h2 class="section-title">Galerie <span>&</span> émotions</h2>
-    <div class="gallery-grid" id="galleryGrid"></div>
+    <div class="gallery-grid" id="galleryGrid">
+      <div style="text-align: center; grid-column: 1/-1;">
+        <p style="margin-bottom: 2rem;">Découvrez nos plus belles réalisations</p>
+        <a href="galerie.html" class="hero-btn">Voir toute la galerie</a>
+      </div>
+    </div>
   </section>
 
   <section id="reservation">
@@ -414,7 +435,6 @@
     </div>
   </section>
 
-  <!-- Nouvelle boîte de messagerie -->
   <section id="messaging">
     <div class="messaging-container">
       <h3><i class="fas fa-envelope"></i> Envoyez-nous un message</h3>
@@ -487,7 +507,7 @@
         <p><i class="fas fa-phone-alt"></i> +242 06 414 1818</p>
         <p><i class="fas fa-phone-alt"></i> +242 06 470 5282</p>
         <p><i class="fas fa-map-marker-alt"></i> Mawata, Pointe-Noire, Congo</p>
-        <p><i class="fas fa-clock"></i> Lun - Sam : 9h - 17h</p>
+        <p><i class="fas fa-clock"></i> Lun - Sam : 9h - 19h</p>
         <div style="margin-top: 2rem;">
           <i class="fas fa-envelope"></i> dmmedia242@gmail.com
         </div>
@@ -508,13 +528,15 @@
         <h4>Liens</h4>
         <a href="#accueil">Accueil</a>
         <a href="#services">Services</a>
-        <a href="#galerie">Galerie</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="statistiques.html">Messagerie</a>
         <a href="#reservation">Réservation</a>
+        <a href="#contact">Contact</a>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
-        <p><i class="fas fa-phone"></i> +242 06 41 41 81 8</p>
-        <p><i class="fas fa-phone"></i> +242 06 47 05 28 2</p>
+        <p><i class="fas fa-phone"></i> +24206 414 1818</p>
+        <p><i class="fas fa-phone"></i> +24206 470 5282</p>
         <p><i class="fas fa-map"></i> Mawata, Pointe-Noire</p>
       </div>
       <div class="footer-col">
@@ -522,7 +544,7 @@
         <div class="social-icons">
           <a href="https://www.facebook.com/share/1HBreW9xK8/" target="_blank"><i class="fab fa-facebook"></i></a>
           <a href="#" id="instagram-link"><i class="fab fa-instagram"></i></a>
-          <a href="https://youtube.com/@dmmedia242?si=Te9X5Au41MWCMdl5" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://youtube.com/@dmmedia242?si=82A7cRvjUwwHxulS" target="_blank"><i class="fab fa-youtube"></i></a>
           <a href="#" id="tiktok-link"><i class="fab fa-tiktok"></i></a>
         </div>
       </div>
@@ -532,7 +554,6 @@
     </div>
   </footer>
 
-  <!-- Chatbot -->
   <div class="chatbot-container">
     <div class="chatbot-btn" id="chatBtn"><i class="fas fa-robot"></i></div>
     <div class="chat-window" id="chatWindow">
@@ -557,6 +578,6 @@
       </div>
     </div>
   </div>
- <script src="java.js"></script>
+  <script src="java.js"></script>
 </body>
 </html>
