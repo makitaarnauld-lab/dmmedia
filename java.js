@@ -1,4 +1,4 @@
-// Gestion des liens inactifs
+ // Gestion des liens inactifs
     document.getElementById('instagram-link')?.addEventListener('click', (e) => {
       e.preventDefault();
       alert('Cette plateforme n\'est pas disponible pour le moment.');
@@ -12,15 +12,10 @@
     function animateSection(sectionId) {
       const section = document.querySelector(sectionId);
       if (section) {
-        // Retirer la classe si elle existe déjà pour réinitialiser l'animation
         section.classList.remove('section-highlight');
-        // Forcer le reflow pour que l'animation se relance
         void section.offsetWidth;
         section.classList.add('section-highlight');
-        // Retirer la classe après l'animation
-        setTimeout(() => {
-          section.classList.remove('section-highlight');
-        }, 700);
+        setTimeout(() => section.classList.remove('section-highlight'), 700);
       }
     }
 
@@ -32,26 +27,17 @@
         const targetId = href;
         const target = document.querySelector(targetId);
         if (target) {
-          // Scroll fluide vers la section
           target.scrollIntoView({ behavior: 'smooth' });
-          // Ajouter l'animation après le début du scroll
-          setTimeout(() => {
-            animateSection(targetId);
-          }, 300); // Délai pour que le scroll ait commencé
+          setTimeout(() => animateSection(targetId), 300);
         }
-        // Fermer le menu burger sur mobile
-        if (window.innerWidth <= 768) {
-          document.querySelector('.nav-links').style.display = 'none';
-        }
+        if (window.innerWidth <= 768) document.querySelector('.nav-links').style.display = 'none';
       }
     }
 
-    // Ajouter l'écouteur à tous les liens de navigation (dans .nav-links et .hero-btn et footer)
     document.querySelectorAll('.nav-links a, .hero-btn, footer a[href^="#"]').forEach(link => {
       link.addEventListener('click', handleNavClick);
     });
 
-    // --- Pour les boutons "Réserver" dans les cartes services ---
     document.querySelectorAll('.btn-reserver').forEach(btn => {
       btn.addEventListener('click', function(e) {
         e.preventDefault();
@@ -59,34 +45,30 @@
         const target = document.querySelector(targetId);
         if (target) {
           target.scrollIntoView({ behavior: 'smooth' });
-          setTimeout(() => {
-            animateSection(targetId);
-          }, 300);
+          setTimeout(() => animateSection(targetId), 300);
         }
       });
     });
 
-    // --- Si l'URL contient une ancre au chargement, on anime la section cible ---
     if (window.location.hash) {
-      const hash = window.location.hash;
-      const target = document.querySelector(hash);
-      if (target) {
-        setTimeout(() => {
-          animateSection(hash);
-        }, 500);
-      }
+      setTimeout(() => animateSection(window.location.hash), 500);
     }
 
-    // --- Formulaire de réservation (calcul automatique du total) ---
+    // --- Formulaire de réservation (calcul automatique du total avec diffusion en direct) ---
     const serviceTypeSelect = document.getElementById('serviceType');
     const dureeSelect = document.getElementById('duree');
     const villeSelect = document.getElementById('ville');
+    const liveSelect = document.getElementById('live');
     const totalDiv = document.getElementById('totalPrice');
+
+    // Prix supplémentaire pour la diffusion en direct
+    const DIRECT_COST = 50000;
 
     function calculerPrix() {
       const ville = villeSelect.value;
       const type = serviceTypeSelect.value;
       const duree = dureeSelect.value;
+      const live = liveSelect.value;
 
       if (!ville || !type || !duree) {
         totalDiv.textContent = 'Sélectionnez vos options';
@@ -102,14 +84,39 @@
       if ((type === 'coutumier' || type === 'officiel' || type === 'complet') && duree === 'demi-journee') {
         prix = Math.round(prix * 0.7);
       }
+
+      // Ajout du coût de diffusion en direct si sélectionné
+      if (live === 'oui') {
+        prix += DIRECT_COST;
+      }
+
       totalDiv.textContent = `Total : ${prix.toLocaleString()} FCFA`;
       return prix;
     }
 
+    // Gestion de l'alerte lors de la sélection de la diffusion en direct
+    let alertShown = false;
+    liveSelect.addEventListener('change', function() {
+      if (this.value === 'oui') {
+        if (!alertShown) {
+          alert("En sélectionnant l’option Diffusion en direct, veuillez noter que ce service est facturé en supplément.\n\nLa mise en place de la diffusion en direct inclut l’installation de 3 écrans de 43 pouces ainsi que les équipements techniques nécessaires.\nCoût du service : 50 000 FCFA\n\nMerci de confirmer votre choix avant de continuer.");
+          alertShown = true;
+        }
+        calculerPrix();
+      } else {
+        calculerPrix();
+      }
+    });
+
     serviceTypeSelect.addEventListener('change', calculerPrix);
     dureeSelect.addEventListener('change', calculerPrix);
     villeSelect.addEventListener('change', calculerPrix);
+    liveSelect.addEventListener('change', calculerPrix);
 
+    // Appel initial pour afficher le prix
+    calculerPrix();
+
+    // Soumission du formulaire
     document.getElementById('bookingForm').addEventListener('submit', function(e) {
       e.preventDefault();
 
@@ -144,7 +151,7 @@
       window.open(`https://wa.me/${numero}?text=${message}`, '_blank');
     });
 
-    // --- Formulaire de contact ---
+    // Formulaire de contact
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       e.preventDefault();
       const name = document.getElementById('contactName').value.trim();
@@ -163,7 +170,7 @@
       window.open(`https://wa.me/242064141818?text=${texte}`, '_blank');
     });
 
-    // --- Chatbot (inchangé) ---
+    // Chatbot (inchangé)
     const chatBtn = document.getElementById('chatBtn');
     const chatWindow = document.getElementById('chatWindow');
     const closeChat = document.getElementById('closeChat');
