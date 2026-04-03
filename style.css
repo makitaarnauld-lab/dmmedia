@@ -17,7 +17,7 @@
     .flag-strip {
       height: 8px;
       width: 100%;
-      background: linear-gradient(45deg, #009543 0%, #009543 33%, #F7D618 33%, #F7D618 66%, #DC241F 66%, #DC241F 100%);
+      background: linear-gradient(45deg, #023cfc 0%, #0328fd 33%, #F7D618 33%, #F7D618 66%, #DC241F 66%, #DC241F 100%);
       position: fixed;
       top: 0;
       z-index: 1000;
@@ -366,11 +366,11 @@
       border-color: #b8860b;
       box-shadow: 0 15px 35px rgba(184,134,11,0.5);
     }
-    .service-card:nth-child(1) { background-image: url('https://images.pexels.com/photos/1128316/pexels-photo-1128316.jpeg?auto=compress&cs=tinysrgb&w=600'); }
-    .service-card:nth-child(2) { background-image: url('https://images.pexels.com/photos/169189/pexels-photo-169189.jpeg?auto=compress&cs=tinysrgb&w=600'); }
-    .service-card:nth-child(3) { background-image: url('https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=600'); }
-    .service-card:nth-child(4) { background-image: url('https://images.pexels.com/photos/6382202/pexels-photo-6382202.jpeg?auto=compress&cs=tinysrgb&w=600'); }
-    .service-card:nth-child(5) { background-image: url('https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=600'); }
+    .service-card:nth-child(1) { background-image: url('image/DSC_0130.JPG'); }
+    .service-card:nth-child(2) { background-image: url('image/DSC_0135.JPG'); }
+    .service-card:nth-child(3) { background-image: url('image/DSC_0018.jpg'); }
+    .service-card:nth-child(4) { background-image: url('image/DSC_7977.JPG'); }
+    .service-card:nth-child(5) { background-image: url('image/DSC_0214.JPG'); }
     .service-content {
       position: relative;
       z-index: 2;

@@ -77,12 +77,13 @@
 
       const tarifs = {
         'pointe-noire': { coutumier: 125000, officiel: 195000, complet: 250000, montage: 25000, graphisme: 0, autre: 0 },
-        'brazzaville': { coutumier: 150000, officiel: 195000, complet: 350000, montage: 30000, graphisme: 0, autre: 0 }
+        'brazzaville': { coutumier: 150000, officiel: 195000, complet: 350000, montage: 30000, graphisme: 0, autre: 0 },
+        'dolisie': { coutumier: 135000, officiel: 180000, complet: 270000, montage: 25000, graphisme: 0, autre: 0 },
       };
 
       let prix = tarifs[ville][type] || 0;
       if ((type === 'coutumier' || type === 'officiel' || type === 'complet') && duree === 'demi-journee') {
-        prix = Math.round(prix * 0.7);
+        prix = Math.round(prix * 0.9);
       }
 
       // Ajout du coût de diffusion en direct si sélectionné
