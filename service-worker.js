@@ -1,23 +1,35 @@
-const CACHE_NAME = "dm-media-cache-v1";
+const CACHE_NAME = "dm-app-v1";
+
 const urlsToCache = [
   "/",
   "/index.html",
-  "/manifest.json"
+  "/styles.css",
+  "/script.js",
+  "/icons/icon-192.png",
+  "/icons/icon-512.png"
 ];
 
-self.addEventListener("install", function(event) {
+// INSTALL
+self.addEventListener("install", event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then(function(cache) {
+      .then(cache => {
+        console.log("Cache ouvert");
         return cache.addAll(urlsToCache);
       })
   );
 });
 
-self.addEventListener("fetch", function(event) {
+// ACTIVATE
+self.addEventListener("activate", event => {
+  console.log("Service Worker activé");
+});
+
+// FETCH (mode offline)
+self.addEventListener("fetch", event => {
   event.respondWith(
     caches.match(event.request)
-      .then(function(response) {
+      .then(response => {
         return response || fetch(event.request);
       })
   );

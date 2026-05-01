@@ -295,3 +295,27 @@
         navLinks.style.transform = 'translateY(0)';
       }
     });
+    if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/service-worker.js")
+      .then(reg => console.log("PWA prête", reg))
+      .catch(err => console.log("Erreur :", err));
+  });
+}
+let deferredPrompt;
+
+window.addEventListener("beforeinstallprompt", (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  document.getElementById("installBtn").style.display = "block";
+});
+
+document.getElementById("installBtn").addEventListener("click", () => {
+  deferredPrompt.prompt();
+  deferredPrompt.userChoice.then(choice => {
+    if (choice.outcome === "accepted") {
+      console.log("App installée");
+    }
+    deferredPrompt = null;
+  });
+});

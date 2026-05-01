@@ -1,19 +1,19 @@
 {
-  "name": "Entreprise DM Media",
-  "short_name": "DM MEDIA",
-  "start_url": "./",
+  "name": "DM MEDIA",
+  "short_name": "DM",
+  "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#000000",
   "theme_color": "#000000",
   "orientation": "portrait",
   "icons": [
     {
-      "src": "image/Letter-DM-Beautiful-Woman-Logo-Graphics-49322423-1-580x387.jpg",
+      "src": "icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "image/Letter-DM-Beautiful-Woman-Logo-Graphics-49322423-1-580x387.jpg",
+      "src": "icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
